@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ff0775f9fb475cb928ec1ffb1b8389, type: 3}
+  m_Name: Quest Data
+  m_EditorClassIdentifier: 
+  Quests:
+  - Tag: TalkWithTruman1
+    Title: SomeTitle
+    Description: SomeQuestText
+    _status: 0
+    AssignedCharacterName: 0
+    Visible: 0
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: First Meeting With Truman
+  - Tag: TalkWithIvan1
+    Title: Go to Morgue
+    Description: Go to Morgue and talk with doctor
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: First Meeting with Ivan
+  - Tag: TalkWithTruman2
+    Title: Go to Truman
+    Description: TalkWithTruman
+    _status: 0
+    AssignedCharacterName: 0
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Trumans Plan
+  - Tag: TalkWithIvan2
+    Title: Go to Ivan
+    Description: Talk with
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 0
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Lenin want walk
+  - Tag: TalkWithPeople
+    Title: Go to RedSqure ana talk with pople
+    Description: Go to RedSqure ana talk with pople
+    _status: 0
+    AssignedCharacterName: 10
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk with random people
+  - Tag: Come back to morg
+    Title: Come back to morg
+    Description: Come back to morg and talk with Truman
+    _status: 0
+    AssignedCharacterName: 0
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Lenin back from walk

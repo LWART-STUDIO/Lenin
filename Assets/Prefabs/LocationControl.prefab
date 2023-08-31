@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4465475203596690121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7692869036226526898}
+  - component: {fileID: 5085539802455581168}
+  m_Layer: 0
+  m_Name: LocationControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7692869036226526898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465475203596690121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 755.99994, y: 558, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5085539802455581168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465475203596690121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d9ed267e57eb6c4fae0e48efed951a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _redSquareStart: {fileID: 7538551475877685446, guid: 16539cbc6cd966a468e7409de77077c6, type: 3}
+  _redSquare: {fileID: 1201633617279605818, guid: 7b90d211e436f7d438375181b632616c, type: 3}
+  _hospital: {fileID: 2243011393690800560, guid: aae9ac07992e4da4294e2855d9dc6d91, type: 3}
+  _morgue: {fileID: -7141526519841016575, guid: 98baf80086d82364bad8824077ca332c, type: 3}
+  _factory: {fileID: 6905158032545216852, guid: 88cbdc921605a034e977fa59d54903c6, type: 3}
+  _dumb: {fileID: 6925866654178084082, guid: 8fab8edcc3f022c409fc2d96bb116b34, type: 3}
+  _rublevka: {fileID: 4046782229357311942, guid: 455722b25e22ff34ba6b062f164bdf81, type: 3}
+  _bank: {fileID: 2591779698999622334, guid: b108b6c30ebe0b046acde6d4d57843e7, type: 3}
+  _churchInside: {fileID: 0}
+  _churchOutside: {fileID: 1044157792802542564, guid: c7061776a7f694d4ca843a90093c5735, type: 3}
+  _chemetry: {fileID: 5534937976285591428, guid: 1a38d76377f26f64e81e215cea9dd437, type: 3}
