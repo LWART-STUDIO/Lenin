@@ -56,6 +56,10 @@ namespace UI.Map
                     _mapPlayer.TeleportToPoint(_locations.Find(x=>
                         x.Location==GameProgress.Location.ChurchOutside).PositionToMove.position);
                     return;
+                case GameProgress.Location.Crypt:
+                    _mapPlayer.TeleportToPoint(_locations.Find(x=>
+                        x.Location==GameProgress.Location.Chemetery).PositionToMove.position);
+                    return;
 
             }
             _mapPlayer.TeleportToPoint(_locations.Find(x=>

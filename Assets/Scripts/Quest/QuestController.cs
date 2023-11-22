@@ -17,19 +17,28 @@ namespace Quest
         {
             _uiControl = uiControl;
         }
-        private void Start()
+        public void SetData(int questIndex)
         {
-            _mainData = Instantiate(_questsData);
-            SetData();
+            if (_mainData == null) _mainData = Instantiate(_questsData);
+            for (int i = 0; i < _mainData.Quests.Count; i++)
+            {
+                if (i < questIndex)
+                {
+                    if(questIndex>0 && questIndex<_mainData.Quests.Count)
+                        _mainData.Quests[i].QuestDataLoad(QuestStatus.Completed);
+                }
+            }
+            SetCurrentQuest();
         }
 
-        public void SetData()
+        public int GetCurrentQuestIndex()
         {
             for (int i = 0; i < _mainData.Quests.Count; i++)
             {
-                
+                    if (_mainData.Quests[i].Status == QuestStatus.NotStarted)
+                        return i;
             }
-            SetCurrentQuest();
+            return 0;
         }
         
 
@@ -47,11 +56,6 @@ namespace Quest
                     return;
                 }
             }
-        }
-
-        public void GetData()
-        {
-            
         }
 
         public Quest GetCurrentQuest()

@@ -70,9 +70,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 50
+  m_SortingLayerID: -207310799
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e10828d80c316684cab7d46e5f69d4c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,6 +98,8 @@ GameObject:
   - component: {fileID: 5045416170301417752}
   - component: {fileID: 901147396682444287}
   - component: {fileID: 3870313872980632250}
+  - component: {fileID: 7188187474868681643}
+  - component: {fileID: 2997643240595749249}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -230,3 +232,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _npcType: 0
+  _npcMover: {fileID: 7188187474868681643}
+--- !u!114 &7188187474868681643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4254250748200526309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235f3e8437baa6e43a1b188b74c85ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody2D: {fileID: 4254250748200526304}
+  _npcAnimation: {fileID: 2997643240595749249}
+--- !u!114 &2997643240595749249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4254250748200526309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89bb7a9bfcf32364788a1af66442abaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upSprites: []
+  downSprites: []
+  sideSprites: []
+  idleSprites: []
+  backIdleSprites: []
+  frameSpeed: 0.1
+  currentSprites: []

@@ -52,6 +52,7 @@ MonoBehaviour:
   _dumb: {fileID: 6925866654178084082, guid: 8fab8edcc3f022c409fc2d96bb116b34, type: 3}
   _rublevka: {fileID: 4046782229357311942, guid: 455722b25e22ff34ba6b062f164bdf81, type: 3}
   _bank: {fileID: 2591779698999622334, guid: b108b6c30ebe0b046acde6d4d57843e7, type: 3}
-  _churchInside: {fileID: 0}
+  _churchInside: {fileID: 4112275731224489597, guid: fe0dc9b5e7d4b7249b8f2ed0e1a6cde0, type: 3}
   _churchOutside: {fileID: 1044157792802542564, guid: c7061776a7f694d4ca843a90093c5735, type: 3}
   _chemetry: {fileID: 5534937976285591428, guid: 1a38d76377f26f64e81e215cea9dd437, type: 3}
+  _crypt: {fileID: 4082044767006533834, guid: f6c65d2225408cf4198c2c8ce850a5df, type: 3}

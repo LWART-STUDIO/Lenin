@@ -19,6 +19,7 @@ namespace Location
         [SerializeField] private LocationMarker _churchInside;
         [SerializeField] private LocationMarker _churchOutside;
         [SerializeField] private LocationMarker _chemetry;
+        [SerializeField] private LocationMarker _crypt;
         private LocationMarker _currentLocation;
         private DiContainer _container;
         private PlayerMarker _playerMarker;
@@ -48,6 +49,11 @@ namespace Location
             return _currentLocation;
         }
 
+        public GameProgress.Location GetCurrentLocationType()
+        {
+            return _currentLocation.Location;
+        }
+
         private void SpawnPlayer()
         {
             Transform playerSpawnPoint = GetCurrentLocation().SpawnNpc.GetPlayerSpawnPoint();
@@ -61,6 +67,12 @@ namespace Location
             _uiControl.HideMap();
             _cutSceneShower.ShowBlackLoadingScreen();
             Invoke(nameof(SwitchLocation),0.7f);
+        }
+
+        public void SwitchLocationWithoutBlackScreen(GameProgress.Location location)
+        {
+            _nextLocation = location;
+            SwitchLocation();
         }
 
         private void SwitchLocation()
@@ -118,6 +130,10 @@ namespace Location
                     break;
                 case GameProgress.Location.ChurchOutside:
                     _currentLocation = _container.InstantiatePrefab(_churchOutside).GetComponent<LocationMarker>();
+                    SpawnPlayer();
+                    break;
+                case GameProgress.Location.Crypt:
+                    _currentLocation = _container.InstantiatePrefab(_crypt).GetComponent<LocationMarker>();
                     SpawnPlayer();
                     break;
                     

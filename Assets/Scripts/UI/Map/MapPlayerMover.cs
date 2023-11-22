@@ -39,8 +39,11 @@ namespace UI.Map
         }
         public void MoveToPoint(Vector3 position,GameProgress.Location location)
         {
-            if(_moveTween!=null)
+            if (_moveTween != null)
+            {
                 _moveTween.Kill();
+            }
+                
             _nextLocation = location;
             _moveTween = transform.DOLocalMove(position, 5f).OnComplete(LoadNextLocation);
             _mapPlayerAnimation.Go();

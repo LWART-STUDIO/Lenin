@@ -73,3 +73,170 @@ MonoBehaviour:
     - StatusExecute: 1
       Function: 1
       TitleOfDialog: Lenin back from walk
+  - Tag: TalkWithIvan3
+    Title: Talk with Ivan
+    Description: Talk with Ivan
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Send to church
+  - Tag: TalkWithPop1
+    Title: Talk with Pop
+    Description: Talk with Pop
+    _status: 0
+    AssignedCharacterName: 2
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Pop meeting
+  - Tag: TalkWithIvan4
+    Title: Talk with Ivan
+    Description: Talk with Ivan
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Burn bodys
+  - Tag: BurnTrup
+    Title: Talk with Ivan
+    Description: Talk with Ivan
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Burn bodys
+  - Tag: TalkWithIvan5
+    Title: Talk with Ivan
+    Description: Talk with Ivan
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Ivan create pharapharm
+  - Tag: TalkWithIvan6
+    Title: Talk with Ivan
+    Description: Talk with Ivan
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Truman want Lenin to Zill
+  - Tag: TalkWithGuard1
+    Title: Talk with Guard
+    Description: Talk with Guard
+    _status: 0
+    AssignedCharacterName: 3
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk with Guard 1
+  - Tag: TalkWithTruman4
+    Title: Talk with Truman
+    Description: Talk with Truman
+    _status: 0
+    AssignedCharacterName: 0
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Comeback from zavbod
+  - Tag: TalkWithYulia1
+    Title: Go and Talk with Yulia
+    Description: Go and Talk with Yulia
+    _status: 0
+    AssignedCharacterName: 4
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk with Yulia
+  - Tag: TalkWithIvan7
+    Title: TalkWih Ivan
+    Description: TalkWih Ivan
+    _status: 0
+    AssignedCharacterName: 4
+    Visible: 0
+    questEvents: []
+  - Tag: GoToSvalka
+    Title: Go to Svalka
+    Description: Go to Svalka
+    _status: 0
+    AssignedCharacterName: 6
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk On Svalka
+  - Tag: TalkWithTruman5
+    Title: Talk With Truman
+    Description: Talk With Truman
+    _status: 0
+    AssignedCharacterName: 0
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk With Truman 5
+  - Tag: TalkWithIvan8
+    Title: Talk With Ivan
+    Description: Talk With Ivan
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk with Ivan about Bank
+  - Tag: GoToBank
+    Title: Go To Bank
+    Description: Go To Bank
+    _status: 0
+    AssignedCharacterName: 5
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk with Bakir
+  - Tag: TalkWithIvan9
+    Title: Talk with Ivan
+    Description: Talk with Ivan
+    _status: 0
+    AssignedCharacterName: 1
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk with Ivan 9
+  - Tag: TalkWithTruman6
+    Title: Talk With Truman
+    Description: Talk With Truman
+    _status: 0
+    AssignedCharacterName: 0
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk with Truman about agitation
+  - Tag: TalkWithPop
+    Title: Talk With Pop
+    Description: Talk With Pop
+    _status: 0
+    AssignedCharacterName: 2
+    Visible: 1
+    questEvents:
+    - StatusExecute: 1
+      Function: 1
+      TitleOfDialog: Talk with pop about agitation

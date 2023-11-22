@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -73,6 +71,7 @@ namespace Teleport.Map
 
         private void SetCurrentSprites(Vector2 direction)
         {
+           
             // Determine current sprites based on movement direction
             if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
             {

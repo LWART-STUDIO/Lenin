@@ -16,7 +16,8 @@ namespace GameProgress
         Police = 8,
         ChurchInside = 9,
         ChurchOutside = 10,
-        Chemetery = 11
+        Chemetery = 11,
+        Crypt = 12
         
 
 

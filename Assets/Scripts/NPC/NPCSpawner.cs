@@ -17,12 +17,12 @@ namespace NPC
             _container = container;
         }
         
-        public void Spawn(GameObject prefab,Transform spawnPoint)
+        public GameObject Spawn(GameObject prefab,Transform spawnPoint)
         {
             PrefabToSpawn = prefab;
             SpawnPoint = spawnPoint;
 
-            _container.InstantiatePrefab(
+           return _container.InstantiatePrefab(
                 PrefabToSpawn, SpawnPoint.position,
                 Quaternion.identity, spawnPoint);
             

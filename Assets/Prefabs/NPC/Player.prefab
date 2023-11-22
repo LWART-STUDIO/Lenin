@@ -141,6 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6731592864310919347}
   - component: {fileID: 6731592864310919348}
+  - component: {fileID: 8528335924048497389}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -201,9 +202,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingLayerID: -207310799
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d62aba5b0a018be45abbac7cc81bbde4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -215,3 +216,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8528335924048497389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731592864310919346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000dd19a1b331b0a4f3477bde7a
+  m_ShapePath:
+  - {x: -2.175389, y: -9.18578, z: 0}
+  - {x: -5.406053, y: -6.3746867, z: 0}
+  - {x: -4.070934, y: -0.42387068, z: 0}
+  - {x: -4.7575607, y: 0.11017819, z: 0}
+  - {x: -2.5069315, y: 1.5978822, z: 0}
+  - {x: -2.2017612, y: 2.3608072, z: 0}
+  - {x: -3.6336472, y: 7.661239, z: 0}
+  - {x: -2.1211042, y: 9.414873, z: 0}
+  - {x: 0.2651346, y: 10.342854, z: 0}
+  - {x: 2.7176583, y: 9.9451475, z: 0}
+  - {x: 4.4953446, y: 7.594954, z: 0}
+  - {x: 2.566466, y: 1.3689915, z: 0}
+  - {x: 4.66451, y: 0.0720187, z: 0}
+  - {x: 4.2449017, y: -1.5682703, z: 0}
+  - {x: 4.8552413, y: -6.7561607, z: 0}
+  - {x: 3.5201228, y: -7.671671, z: 0}
+  - {x: 1.9665293, y: -9.22204, z: 0}
+  m_ShapePathHash: -1850343639
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 116292
+  m_LocalBounds:
+    m_Center: {x: -0.27540588, y: 0.5604067, z: 0}
+    m_Extent: {x: 5.130647, y: 9.782447, z: 0}

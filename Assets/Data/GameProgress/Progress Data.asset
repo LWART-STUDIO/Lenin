@@ -12,16 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aad17027aad4a5aa03b76c15af5303b, type: 3}
   m_Name: Progress Data
   m_EditorClassIdentifier: 
-  CurrentLocation: 0
-  CurrentPlayerPosition: {x: 0, y: 0, z: 0}
-  CurrentCutScene: 
-  SavedGameData:
-    m_version: 0
-    m_sceneName: MainScene
-    m_list:
-    - key: Player
-      sceneIndex: -1
-      data: '{"staticQuestIds":["GoToMorg01"],"staticQuestData":[{"bytes":[0,1,0,0,0,14,123,81,85,69,83,84,71,73,86,69,82,73,68,125,6,84,114,117,109,97,110,6,84,114,117,109,97,110,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]}],"proceduralQuests":[],"deletedStaticQuests":[]}'
-    - key: Truman(Clone)
-      sceneIndex: -1
-      data: '{"staticQuestIds":["GoToMorg01"],"staticQuestData":[{"bytes":[0,2,0,0,0,14,123,81,85,69,83,84,71,73,86,69,82,73,68,125,6,84,114,117,109,97,110,12,123,81,85,69,83,84,71,73,86,69,82,125,6,84,114,117,109,97,110,6,84,114,117,109,97,110,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0]}],"proceduralQuests":[],"deletedStaticQuests":[]}'
+  isExpanded: 1
+  saveKey: 
+  CurrentLocation:
+    key: CurrentLocation
+    value: 0
+  CurrentPlayerPosition:
+    key: CurrentPlayerPosition
+    value: {x: 0, y: 0, z: 0}
+  CurrentCutScene:
+    key: CurrentCutScene
+    value: Start
+  LastQuestIndex:
+    key: LastQuestIndex
+    value: 0
+  MoneyCount:
+    key: MoneyCount
+    value: 0
+  ParapharmCount:
+    key: ParapharmCount
+    value: 100
