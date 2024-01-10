@@ -1,10 +1,8 @@
-using System;
 using CarterGames.Assets.SaveManager;
 using Location;
 using Player;
 using Quest;
 using UI;
-using Unity.VisualScripting;
 using UnityEngine;
 using Zenject;
 
@@ -54,8 +52,6 @@ namespace GameProgress
             SaveManager.Save();
            
         }
-
-
 
         private void LoadInventory()
         {
@@ -114,6 +110,16 @@ namespace GameProgress
         {
             if(_progressData==null)
                 _progressData = ScriptableObject.CreateInstance<GameProgressData>();
+        }
+
+        private void GivePPharapharm()
+        {
+            _inventory.GiveParaphrm(100);
+        }
+        [NaughtyAttributes.Button]
+        private void GiveSomeMoney()
+        {
+            _inventory.GiveMoney(100);
         }
     }
 }

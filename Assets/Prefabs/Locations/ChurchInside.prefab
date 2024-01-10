@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 4112275731224489598}
   - component: {fileID: 4112275731224489596}
   - component: {fileID: 4112275731224489597}
+  - component: {fileID: 1847333383997439345}
   m_Layer: 0
   m_Name: ChurchInside
   m_TagString: Untagged
@@ -305,6 +306,10 @@ MonoBehaviour:
   _npcSpawnData:
   - Prefab: {fileID: 8539846037001585856, guid: 00fdc4c947b5ec946b10ea8fb12ddfb8, type: 3}
     SpawnPoint: {fileID: 5948120325597150047}
+  _spawnPatrolNpc: 0
+  _waypotsRoot: {fileID: 0}
+  _npcPatrolPrefab: []
+  _patrolNPCCount: 0
 --- !u!114 &4112275731224489597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +323,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _location: 9
+--- !u!114 &1847333383997439345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4112275731224489599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9373e2c36ed6b3442813a6b41a829118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5948120323888751529
 GameObject:
   m_ObjectHideFlags: 0

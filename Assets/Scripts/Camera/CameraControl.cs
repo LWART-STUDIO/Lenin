@@ -17,7 +17,7 @@ namespace Camera
             _playerMarker = playerMarker;
         }
 
-        private void Awake()
+        private void Start()
         {
             Transform playerTransform = _playerMarker.transform;
             _playerCamera.Follow = playerTransform;

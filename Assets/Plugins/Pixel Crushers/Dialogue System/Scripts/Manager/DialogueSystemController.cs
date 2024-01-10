@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using Zenject;
 #if USE_ADDRESSABLES
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -1120,6 +1121,7 @@ namespace PixelCrushers.DialogueSystem
         {
             StartConversation(title, actor, null, -1);
         }
+        
 
         /// <summary>
         /// Starts the conversation with no transforms specified for the actor or conversant.

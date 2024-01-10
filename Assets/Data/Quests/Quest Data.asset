@@ -54,8 +54,8 @@ MonoBehaviour:
       Function: 1
       TitleOfDialog: Lenin want walk
   - Tag: TalkWithPeople
-    Title: Go to RedSqure ana talk with pople
-    Description: Go to RedSqure ana talk with pople
+    Title: Go to RedSqure talk with pople
+    Description: Go to RedSqure  talk with pople
     _status: 0
     AssignedCharacterName: 10
     Visible: 1

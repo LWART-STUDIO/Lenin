@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.aarthificial.typewriter": "https://github.com/aarthificial-gamedev/typewriter.git",
     "com.unity.barracuda": "3.0.0",
     "com.unity.cinemachine": "2.8.9",
     "com.unity.editorcoroutines": "1.0.0",

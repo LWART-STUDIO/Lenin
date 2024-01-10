@@ -24,11 +24,17 @@ namespace Inventory
         public void GiveMoney(int count)
         {
             _money.Add(count);
+            _money.UpdateMoneyInDialogSystem();
         }
-
+        public void GetMoney(int count)
+        {
+            _money.Remove(count);
+            _money.UpdateMoneyInDialogSystem();
+        }
         private void Start()
         {
             _parapharm.ParapharmBecomeZerro += RemoveLife;
+            _money.UpdateMoneyInDialogSystem();
         }
 
         public void RemoveLife()
@@ -50,6 +56,8 @@ namespace Inventory
         public void SetUpMoney(int count)
         {
             _money.SetUp(count,999999999);
+          //  _money.UpdateMoneyInDialogSystem();
+            
         }
 
         public void SetUpLife(int count)
@@ -59,6 +67,11 @@ namespace Inventory
         public void SetUpParapharm(int count)
         {
             _parapharm.SetUp(count, 100);
+        }
+
+        public void GiveParaphrm(int count)
+        {
+            _parapharm.Add(count);
         }
         
 

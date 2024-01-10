@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: _iconSprite
       value: 
       objectReference: {fileID: 21300000, guid: 52ec218977f0eca4a9c0ddf1ae596388, type: 3}
+    - target: {fileID: 8405229168871820810, guid: 5440e61aeb812ee4fb53222787cd9d57, type: 3}
+      propertyPath: _photoCunsceneName
+      value: NPC3
+      objectReference: {fileID: 0}
     - target: {fileID: 8798168971933322581, guid: 5440e61aeb812ee4fb53222787cd9d57, type: 3}
       propertyPath: m_Name
       value: NPC3

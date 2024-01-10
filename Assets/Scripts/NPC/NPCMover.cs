@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using DG.Tweening;
 using PixelCrushers.DialogueSystem;
 using UnityEngine;
+using UnityEngine.Serialization;
+using DialogueManager = Dialogues.DialogueManager;
 using Random = UnityEngine.Random;
 
 namespace NPC
 {
     public class NPCMover : MonoBehaviour
     {
+        public bool ReachedDestination;
         [SerializeField] private Rigidbody2D _rigidbody2D;
         [SerializeField] private NPCAnimation _npcAnimation;
-        private List<Transform> _patrolPoints;
         private bool _startPatrol;
-        private Transform _currentPoint;
         private Tween _moveTween;
-
-        public void StartPatrol(List<Transform> patrolPoints)
+        private Vector3 _destination;
+        
+        public void StartPatrol()
         {
-            _patrolPoints = patrolPoints;
             StartPatrolChange();
-
         }
 
         private void StartPatrolChange()
@@ -34,11 +34,9 @@ namespace NPC
             
             if(!_startPatrol)
                 return;
-            if (_currentPoint == null)
-                _currentPoint = _patrolPoints[Random.Range(0, _patrolPoints.Count)];
             if(_moveTween == null)
-                _moveTween = _rigidbody2D.DOMove(_currentPoint.position, 3f).SetSpeedBased().SetEase(Ease.Linear).OnComplete(UpdatePoint);
-            Vector2 direction = _currentPoint.position-transform.position;
+                _moveTween = _rigidbody2D.DOMove(_destination, 3f).SetSpeedBased().SetEase(Ease.Linear).OnComplete(UpdatePoint);
+            Vector2 direction = _destination-transform.position;
             if (direction != Vector2.zero)
                 _npcAnimation.Animate(direction);
             else
@@ -59,10 +57,16 @@ namespace NPC
             StartPatrolChange();
             DialogueManager.instance.conversationEnded-=ContinueMove;
         }
-        private void UpdatePoint()
+        public void UpdatePoint()
         {
-            _currentPoint = null;
+            ReachedDestination = true;
             _moveTween = null;
+        }
+
+        public void SetDestination(Vector3 destination)
+        {
+            _destination = destination;
+            ReachedDestination = false;
         }
     }
 }

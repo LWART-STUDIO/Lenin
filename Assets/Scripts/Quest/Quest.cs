@@ -4,6 +4,7 @@ using NPC;
 using PixelCrushers.DialogueSystem;
 using UnityEngine;
 using Zenject;
+using DialogueManager = Dialogues.DialogueManager;
 
 namespace Quest
 {

@@ -25,7 +25,6 @@ namespace UI
 
         public void SetUpQuestPanel(Quest.Quest quest)
         {
-            Debug.Log("ChangeUi");
             _questPanel.SetUpText(quest);
         }
         public void HideMap()

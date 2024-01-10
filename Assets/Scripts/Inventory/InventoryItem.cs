@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
 namespace Inventory
@@ -11,20 +12,25 @@ namespace Inventory
         {
             _count = count;
             _maxCount = maxCount;
+            
         }
         public void Add(int amount)
         {
             _count = Mathf.Min(_count+amount, _maxCount);
+            
         }
 
         public void Remove(int amount)
         {
             _count = Mathf.Max(_count-amount,0);
+            
         }
 
         public int GetCount()
         {
             return _count;
         }
+
+        
     }
 }
